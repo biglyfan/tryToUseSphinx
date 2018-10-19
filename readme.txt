@@ -14,3 +14,7 @@ Git is free software distributed under the GPL.
 因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，所以，现在，git commit就是往master分支上提交更改。
 
 你可以简单理解为，需要提交的文件修改通通放到暂存区，然后，一次性提交暂存区的所有修改。
+
+取消修改有两种方式：
+1. 文件已经修改，但含没有add入暂存区。  :: 这个时候只需要使用git checkout -- file就可以撤销修改。
+2. 文件已经修改，而且已经add进暂存区了。 :: 这个时候需要使用git reset HEAD file撤销暂存区，然后再使用1的方法。
