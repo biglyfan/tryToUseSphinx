@@ -1,0 +1,271 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. UNIT02 让Python开口说话 &mdash; Python常见问题&#39;s documentation! latest 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="3. UNIT03 Python语音机器人" href="unit03.html" />
+    <link rel="prev" title="1. UNIT01 和Python的第一次接触" href="unit01.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Python常见问题's documentation!
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Level1 入门班:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="unit01.html">1. UNIT01 和Python的第一次接触</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. UNIT02 让Python开口说话</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">2.1. 模块</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2.1.1. 没有导入模块直接使用模块</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">2.1.2. 模块名写错或者模块没有安装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">2.1.3. 方法不存在错误</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">2.1.4. 模块别名</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">2.1.5. 模块方法调用图片，图片名错误</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unit03.html">3. UNIT03 Python语音机器人</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit04.html">4. UNIT04 Python自动人像识别</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python常见问题's documentation!</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>2. UNIT02 让Python开口说话</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/course/L0/unit02.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unit02-python">
+<h1>2. UNIT02 让Python开口说话<a class="headerlink" href="#unit02-python" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>2.1. 模块<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id2">
+<h3>2.1.1. 没有导入模块直接使用模块<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p><strong>代码示例：</strong></p>
+<img alt="../../_images/1.png" src="../../_images/1.png" />
+<p><strong>定位问题：</strong> （ <a class="reference external" href="../../question/NameError.html#id4">详情</a> ）</p>
+<p>第1行： 没有导入ybc_box模块。</p>
+</div>
+<div class="section" id="id4">
+<h3>2.1.2. 模块名写错或者模块没有安装<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p><strong>代码示例：</strong></p>
+<img alt="course\L0\../../_static/image/L0/UNIT02/2.png" src="course\L0\../../_static/image/L0/UNIT02/2.png" />
+<p><strong>定位问题：</strong> （ <a class="reference external" href="../../question/ModuleNotFoundError.html#id1">详情</a> ）</p>
+<p>第1行： ybcbox模块名称写错或者没有安装此模块。</p>
+</div>
+<div class="section" id="id6">
+<h3>2.1.3. 方法不存在错误<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<p><strong>代码示例：</strong></p>
+<img alt="course\L0\../../_static/image/L0/UNIT02/3.png" src="course\L0\../../_static/image/L0/UNIT02/3.png" />
+<p><strong>定位问题：</strong> （ <a class="reference external" href="../../question/AttributeError.html#id2">详情</a> ）</p>
+<p>第2行： 方法名拼写错误或者不存在这个方法。</p>
+</div>
+<div class="section" id="id8">
+<h3>2.1.4. 模块别名<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<p><strong>代码示例：</strong></p>
+<img alt="course\L0\../../_static/image/L0/UNIT02/4.png" src="course\L0\../../_static/image/L0/UNIT02/4.png" />
+<p><strong>定位问题：</strong> （ <a class="reference external" href="../../question/NameError.html#id3">详情</a> ）</p>
+<p>第2行： ybc_speech模块起了别名，就只能通过起的别名speech调用属性。</p>
+</div>
+<div class="section" id="id10">
+<h3>2.1.5. 模块方法调用图片，图片名错误<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<p><strong>代码示例：</strong></p>
+<img alt="course\L0\../../_static/image/L0/UNIT02/5.png" src="course\L0\../../_static/image/L0/UNIT02/5.png" />
+<p>第3行： ybc_box模块第二个参数，图片格式拼写错误。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="unit03.html" class="btn btn-neutral float-right" title="3. UNIT03 Python语音机器人" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="unit01.html" class="btn btn-neutral" title="1. UNIT01 和Python的第一次接触" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, luyufan
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'latest',
+              LANGUAGE:'zh_CN',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
